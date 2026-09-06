@@ -1,0 +1,53 @@
+.movies-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card{
+    width: 20%;
+    padding: 10px;
+}
+
+.movie-card__poster{
+    width: 100%;
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal__overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__content{
+    z-index: 1;
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: #3e3e3e;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.modal__close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.hidden{
+    display: none;
+}

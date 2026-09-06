@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_logo">MOVIE SEARCH</h1>
+        <form action="" class="search-form">
+            <input type="text" class="search-input" placeholder="Назва фільму...">
+            <button class="search-btn">Пошук</button>
+        </form>
+        <div class="header__controls">
+            <button class="btn-watchlist-toggle">
+                Мій список <span class="counter">0</span>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title">Популярні фільми</h2>
+            <div class="movies-grid">
+                
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </main>
+    <div class="modal hidden">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">X</button>
+            <div class="modal__body"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
